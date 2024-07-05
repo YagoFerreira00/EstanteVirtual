@@ -1,12 +1,14 @@
 # Estante Virtual
 
 ## Descrição
-[Breve descrição do projeto]
+Estante Virtual é um site dedicado aos amantes de livros, oferecendo uma plataforma interativa para descobrir, revisar e compartilhar suas obras favoritas. Com uma vasta biblioteca de livros famosos, usuários podem explorar títulos, ler avaliações de outros leitores e contribuir com suas próprias opiniões. O site também permite aos usuários criar uma conta para interagir com uma comunidade de leitores apaixonados.
 
 ## Funcionalidades
-[Funcionalidade 1]
-[Funcionalidade 2]
-[Funcionalidade 3]
+Biblioteca de Livros Famosos: Explore uma coleção abrangente de livros famosos e best-sellers.
+Avaliações de Usuários: Leia e escreva avaliações detalhadas sobre os livros que você leu.
+Cadastro de Conta: interagir com a comunidade
+Comentários e Discussões: Participe de discussões animadas sobre livros, autores e temas literários.
+
 ## Requisitos
 **Tecnologias Utilizadas:**
 PHP

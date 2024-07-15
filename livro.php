@@ -33,9 +33,8 @@
 </head>
 
 <body>
- <!--
-  <div class="hero_area"> 
--->
+
+   <div class="hero_area">
     <!-- header section strats -->
     <?php include_once ('header.php'); ?>
     <!-- end header section -->
@@ -177,14 +176,14 @@
       </div>
 
     </section>
-    end slider section 
-  </div>-->
+     end slider section -->
+  
 
 
   
 
 
-  <!-- about section
+  <!-- about section -->
 
   <section class="about_section layout_padding">
     <div class="container-fluid">
@@ -192,35 +191,51 @@
         <div class="col-md-6">
           <div class="img_container">
             <div class="img-box b1">
-              <img src="images/a-11.jpg" alt="">
-            </div>
-            <div class="img-box b2">
-              <img src="images/a-22.jpg" alt="">
-            </div>
+              <img style="max-height: 250px;" src="images/a-22.png" alt="">
+            </div> 
+            <!--<div class="img-box b2">
+              <img src="images/a-22.png" alt="">
+            </div>-->
           </div>
         </div>
         <div class="col-md-6">
           <div class="detail-box">
             <h2>
-              O que é a Estante Virtual?
+              Nome do livro
             </h2>
+            <h6>
+                Editora
+            </h6>
             <p>
               There are many variations of passages of Lorem Ipsum
               There are many variations of
               passages of Lorem Ipsum
             </p>
+            <br>
+            <div class="like">
+                <h6>
+                Avaliação
+                </h6>
+                <div style="color: #ff9900" class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
             <a href="">
-              Saiba Mais
+              Avaliar
             </a>
           </div>
         </div>
       </div>
     </div>
   </section>
-    end about section -->
+  <!-- end about section -->
 
 
-  <!-- product section -->
+  <!-- product section
 
   <section class="product_section ">
     <div class="container">
@@ -259,7 +274,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="livro.php">
+            <a href="">
               Ver livro
             </a>
           </div>
@@ -293,7 +308,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="livro.php">
+            <a href="">
               Ver livro
             </a>
           </div>
@@ -327,7 +342,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="livro.php">
+            <a href="">
               Ver livro
             </a>
           </div>
@@ -336,10 +351,10 @@
     </div>
   </section>
 
-  <!-- end product section -->
+  < end product section -->
 
 
-  <!-- product section -->
+  <!-- product section 
 
   <section class="product_section ">
     <div class="container">
@@ -378,7 +393,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="livro.php">
+            <a href="">
               Ver livro
             </a>
           </div>
@@ -412,7 +427,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="livro.php">
+            <a href="">
               Ver livro
             </a>
           </div>
@@ -446,7 +461,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="livro.php">
+            <a href="">
               Ver livro
             </a>
           </div>
@@ -456,10 +471,10 @@
   </section>
 
 
-  <!-- end product section -->
+   end product section -->
 
 
-  <!-- product section -->
+  <!-- product section 
 
   <section class="product_section ">
     <div class="container">
@@ -498,7 +513,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="livro.php">
+            <a href="">
               Ver livro
             </a>
           </div>
@@ -532,7 +547,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="livro.php">
+            <a href="">
               Ver livro
             </a>
           </div>
@@ -566,7 +581,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="livro.php">
+            <a href="">
               Ver livro
             </a>
           </div>
@@ -576,7 +591,7 @@
   </section>
 
 
-  <!-- end product section -->
+   end product section -->
 
   <!-- contact section
   <section class="contact_section layout_padding">
@@ -623,12 +638,12 @@
   end contact section -->
 
 
-  <!-- client section
+  <!-- client section -->
   <section class="client_section layout_padding-bottom">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          Testimonial
+          Comentarios
         </h2>
       </div>
     </div>
@@ -646,15 +661,15 @@
                     <div class="client_info">
                       <div class="client_name">
                         <h5>
-                          Morojink
+                          Yago
                         </h5>
                         <h6>
-                          Customer
+                           Leitor(a)
                         </h6>
                       </div>
                       <i class="fa fa-quote-left" aria-hidden="true"></i>
                     </div>
-                    <p>
+                    <p style="color: #004aad">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                       labore
                       et
@@ -681,15 +696,15 @@
                     <div class="client_info">
                       <div class="client_name">
                         <h5>
-                          Morojink
+                          Matheus
                         </h5>
                         <h6>
-                          Customer
+                          Escritor(a)
                         </h6>
                       </div>
                       <i class="fa fa-quote-left" aria-hidden="true"></i>
                     </div>
-                    <p>
+                    <p style="color: #004aad">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                       labore
                       et
@@ -716,15 +731,15 @@
                     <div class="client_info">
                       <div class="client_name">
                         <h5>
-                          Morojink
+                          Carol
                         </h5>
                         <h6>
-                          Customer
+                          Leitor(a)
                         </h6>
                       </div>
                       <i class="fa fa-quote-left" aria-hidden="true"></i>
                     </div>
-                    <p>
+                    <p style="color: #004aad">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                       labore
                       et
@@ -747,12 +762,12 @@
       </ol>
     </div>
   </section>
-  end client section -->
+  <!-- end client section -->
 
 
-    <!-- footer section -->
-    <?php include_once ('footer.php'); ?>
 
+  <!-- footer section -->
+  <?php include_once ('footer.php'); ?>
 
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>

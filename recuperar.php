@@ -45,28 +45,22 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Cadastro
+          Recuperar senha
         </h2>
       </div>
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
             <form action="">
-            <div>
-                <input type="text" placeholder="Nome" />
-              </div>
-              <div>
-                <input type="text" placeholder="Telefone" />
-              </div>
               <div>
                 <input type="email" placeholder="Email" />
               </div>
               <div>
-                <input type="password" placeholder="Senha" />
               </div>
+              <br>
               <div class="btn_box">
                 <button>
-                  Cadastrar-se
+                  Recuperar
                 </button>
               </div>
             </form>
@@ -74,8 +68,8 @@
         </div>
         <div class="col-md-6 ">
           <div class="map_container">
-            <div class="mapc">
-              <img src="./images/Bibliophile.gif" alt="">
+            <div class="mapr">
+              <img src="./images/Resetpassword.gif" alt="">
             </div>
           </div>
         </div>

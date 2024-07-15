@@ -45,8 +45,7 @@ $logado = isset($_SESSION['logado']) && $_SESSION['logado'];
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index2.php">
             <span>
-            <div class="logo" style="max-width: 50px; max-height: 50px;">
-									</div> Estante Virtual
+						<img class="logo" style="max-width: 50px; max-height: 50px;" src="./images/logob2.png" alt=""> Estante Virtual
             </span>
           </a>
 
@@ -56,7 +55,7 @@ $logado = isset($_SESSION['logado']) && $_SESSION['logado'];
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="index2.php">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
@@ -73,11 +72,11 @@ $logado = isset($_SESSION['logado']) && $_SESSION['logado'];
                 <?php endif ?>
             </ul>
             <div class="user_optio_box">
+              <!-- <a href="">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a> -->
               <a href="login2.php">
                 <i class="fa fa-user" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
               </a>
             </div>
           </div>

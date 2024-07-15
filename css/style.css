@@ -466,7 +466,7 @@ a:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f6f6f6;
+  background-color: #004aad;
 }
 
 .about_section .img_container .img-box.b1::before {
@@ -547,6 +547,14 @@ a:focus {
   margin: 0 -10px;
 }
 
+.product_section .product_container h6{
+color: #004aad
+}
+
+.product_section .product_container h5{
+  color: #004aad
+  }
+
 .product_section .product_container .box {
   width: 355px;
   display: -webkit-box;
@@ -563,7 +571,7 @@ a:focus {
 }
 
 .product_section .product_container .box .box-content {
-  background-color: #CCCCCC;
+  background-color: #ffffff;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -611,7 +619,7 @@ a:focus {
 }
 
 .product_section .product_container .box .box-content .detail-box .star_container {
-  color: #e2ba1b;
+  color: #ff9900;
 }
 
 .product_section .product_container .box .btn-box {
@@ -657,7 +665,7 @@ a:focus {
   overflow: hidden;
   margin-right: -65px;
   position: relative;
-  border: 5px solid #19c880;
+  border: 5px solid #ff9900;
 }
 
 .client_section .box .img-box img {
@@ -727,7 +735,7 @@ a:focus {
 .client_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #004aad;
+  background-color: #ffffff;
 }
 
 .contact_section {
@@ -827,11 +835,25 @@ a:focus {
   height: 475px;
 }
 
-.contact_section .map_container .mapl img{
+.contact_section .map_container .mapc img{
   position: absolute;
-  top: -38%;
-  width: 550px;
-  height: 550px;
+  top: -40%;
+  width: 575px;
+  height: 575px;
+}
+
+.contact_section .map_container .mapcl img{
+  position: absolute;
+  top: -60%;
+  width: 525px;
+  height: 525px;
+}
+
+.contact_section .map_container .mapr img{
+  position: absolute;
+  top: -70%;
+  width: 450px;
+  height: 450px;
 }
 
 .contact_section .map_container .map #googleMap {

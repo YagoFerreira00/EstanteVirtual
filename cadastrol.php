@@ -45,7 +45,7 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Cadastro
+          Cadastro de livro
         </h2>
       </div>
       <div class="row">
@@ -53,20 +53,18 @@
           <div class="form_container">
             <form action="">
             <div>
-                <input type="text" placeholder="Nome" />
+                <input type="text" placeholder="Titulo" />
               </div>
               <div>
-                <input type="text" placeholder="Telefone" />
+                <input type="text" placeholder="Editora" />
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" placeholder="AQUI VAI UMA LISTA COM O GENEROS" />
               </div>
-              <div>
-                <input type="password" placeholder="Senha" />
-              </div>
+
               <div class="btn_box">
                 <button>
-                  Cadastrar-se
+                  Cadastrar
                 </button>
               </div>
             </form>
@@ -74,8 +72,8 @@
         </div>
         <div class="col-md-6 ">
           <div class="map_container">
-            <div class="mapc">
-              <img src="./images/Bibliophile.gif" alt="">
+            <div class="mapcl">
+              <img src="./images/Handholdingpen.gif" alt="">
             </div>
           </div>
         </div>

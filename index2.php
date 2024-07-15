@@ -258,7 +258,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="">
+            <a href="livro.php">
               Ver livro
             </a>
           </div>
@@ -292,7 +292,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="">
+            <a href="livro.php">
               Ver livro
             </a>
           </div>
@@ -326,7 +326,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="">
+            <a href="livro.php">
               Ver livro
             </a>
           </div>
@@ -377,7 +377,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="">
+            <a href="livro.php">
               Ver livro
             </a>
           </div>
@@ -411,7 +411,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="">
+            <a href="livro.php">
               Ver livro
             </a>
           </div>
@@ -445,7 +445,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="">
+            <a href="livro.php">
               Ver livro
             </a>
           </div>
@@ -497,7 +497,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="">
+            <a href="livro.php">
               Ver livro
             </a>
           </div>
@@ -531,7 +531,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="">
+            <a href="livro.php">
               Ver livro
             </a>
           </div>
@@ -565,7 +565,7 @@
             </div>
           </div>
           <div class="btn-box">
-            <a href="">
+            <a href="livro.php">
               Ver livro
             </a>
           </div>

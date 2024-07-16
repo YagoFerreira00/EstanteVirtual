@@ -1,11 +1,3 @@
-<?php
-if(session_start() === PHP_SESSION_NONE) {
-    session_start();
-}
-
-$logado = isset($_SESSION['logado']) && $_SESSION['logado'];
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -61,15 +53,6 @@ $logado = isset($_SESSION['logado']) && $_SESSION['logado'];
               <li class="nav-item">
                 <a class="nav-link" href="livros.php">Livros</a>
               </li>
-              <?php if($logado): ?>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Editar Perfil</a>
-              </li>
-              <?php else: ?>
-                <div class="logar-senaoestiverlogado">
-                <p></p>
-                </div>
-                <?php endif ?>
             </ul>
             <div class="user_optio_box">
               <!-- <a href="">

@@ -1,3 +1,19 @@
+<?php
+include_once './config/config.php';
+include_once './classes/Usuario.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $usuario = new Usuario($db);
+    $nome = $_POST['nome'];
+    $fone = $_POST['fone'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    $usuario->criar($nome, $fone, $email, $senha);
+    header('Location: login2.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -53,19 +69,19 @@
           <div class="form_container">
             <form action="">
             <div>
-                <input type="text" placeholder="Nome" />
+                <input type="text" placeholder="Nome" name="nome" required/>
               </div>
               <div>
-                <input type="text" placeholder="Telefone" />
+                <input type="text" placeholder="Telefone" name="fone" required/>
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" placeholder="Email" name="email" required/>
               </div>
               <div>
-                <input type="password" placeholder="Senha" />
+                <input type="password" placeholder="Senha" name="senha" required/>
               </div>
               <div class="btn_box">
-                <button>
+                <button type="submit" value="Adicionar">
                   Cadastrar-se
                 </button>
               </div>

@@ -1,3 +1,25 @@
+<?php
+session_start();
+include_once './config/config.php';
+include_once './classes/Usuario.php';
+
+$usuario = new Usuario($db);
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['login'])) {
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+        if ($dados_Usuario = $usuario->login($email, $senha)) {
+            $_SESSION['usuario_id'] = $dados_Usuario['id'];
+            header('location:index2.php');
+            exit();
+        } else {
+            $mensagem_erro = "Credenciais Inválidas!";
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -51,12 +73,12 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
-            <form action="">
+            <form method="POST">
               <div>
-                <input type="email" placeholder="Email" />
+                <input name="email" type="email" placeholder="Email" />
               </div>
               <div>
-                <input type="password" placeholder="Senha" />
+                <input name="senha" type="password" placeholder="Senha" />
               </div>
               <div>
               <p style="text-align: right; font-size: 12px;">
@@ -66,13 +88,19 @@
               </div>
               <br>
               <div class="btn_box">
-                <button>
+                <button type="submit" name="login" value="Entrar">
                   Entrar
                 </button>
                 Não possui cadastro?
                 <a href="cadastro.php">Cadastrar-se</a>
               </div>
             </form>
+            <div class="mensagem">
+                <?php
+                if (isset($mensagem_erro))
+                    echo '<p>' . $mensagem_erro . '</p>';
+                ?>
+            </div>
           </div>
         </div>
         <div class="col-md-6 ">

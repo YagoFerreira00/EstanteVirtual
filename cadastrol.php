@@ -36,54 +36,73 @@
 
   <div class="hero_area">
     <!-- header section strats -->
-    <?php include_once ('header.php'); ?>
+    <?php include_once('header.php'); ?>
     <!-- end header section -->
-   
 
-  <!-- contact section -->
-  <section class="contact_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Cadastro de livro
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form_container">
-            <form action="">
-            <div>
-                <input type="text" placeholder="Titulo" />
-              </div>
-              <div>
-                <input type="text" placeholder="Editora" />
-              </div>
-              <div>
-                <input type="email" placeholder="AQUI VAI UMA LISTA COM O GENEROS" />
-              </div>
 
-              <div class="btn_box">
-                <button>
-                  Cadastrar
-                </button>
-              </div>
-            </form>
-          </div>
+    <!-- contact section -->
+    <section class="contact_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            Cadastro de livro
+          </h2>
         </div>
-        <div class="col-md-6 ">
-          <div class="map_container">
-            <div class="mapcl">
-              <img src="./images/Handholdingpen.gif" alt="">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form_container">
+              <form action="">
+                <div>
+                  <input type="file" placeholder="Capa" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Titulo" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Editora" />
+                </div>
+                <div>
+                  <select name="genero" id="genero" placeholder="Selecione o genero">
+                    <option value="Ficção Científica">Ficção Científica</option>
+                    <option value="Fantasia">Fantasia</option>
+                    <option value="Mistério">Mistério</option>
+                    <option value="Suspense Thriller">Suspense/Thriller</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Histórico">Histórico</option>
+                    <option value="Literatura Contemporânea">Literatura Contemporânea</option>
+                    <option value="Young Adult">Young Adult (YA)</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Biografia Autobiografia">Biografia/Autobiografia</option>
+                    <option value="Memórias">Memórias</option>
+                    <option value="Literatura Clássica">Literatura Clássica</option>
+                    <option value="Ensaios">Ensaios</option>
+                    <option value="Literatura Infantil">Literatura Infantil</option>
+                  </select>
+                </div>
+                <br>
+                <div class="btn_box">
+                  <button>
+                    Cadastrar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="map_container">
+              <div class="mapcl">
+                <img src="./images/Handholdingpen.gif" alt="">
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- end contact section -->
+    </section>
+    <!-- end contact section -->
 
 
-  <!-- client section
+    <!-- client section
   <section class="client_section layout_padding-bottom">
     <div class="container">
       <div class="heading_container heading_center">
@@ -210,23 +229,23 @@
   end client section -->
 
 
-  <!-- footer section -->
-  <?php include_once ('footer.php'); ?>
+    <!-- footer section -->
+    <?php include_once('footer.php'); ?>
 
 
-  <!-- jQery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- custom js -->
-  <script type="text/javascript" src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
+    <!-- jQery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    </script>
+    <!-- End Google Map -->
 
 </body>
 

@@ -845,9 +845,9 @@ color: #004aad
 
 .contact_section .map_container .mapcl img{
   position: absolute;
-  top: -60%;
-  width: 525px;
-  height: 525px;
+  top: -52%;
+  width: 575px;
+  height: 575px;
 }
 
 .contact_section .map_container .mapr img{

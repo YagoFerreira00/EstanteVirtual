@@ -60,9 +60,6 @@
                       <a href="" class="btn1">
                         Comentar
                       </a>
-                      <a href="" class="btn2">
-                        Avaliar
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -83,9 +80,6 @@
                     <div class="btn-box">
                       <a href="" class="btn1">
                         Comentar
-                      </a>
-                      <a href="" class="btn2">
-                        Avaliar
                       </a>
                     </div>
                   </div>
@@ -108,9 +102,6 @@
                       <a href="" class="btn1">
                         Comentar
                       </a>
-                      <a href="" class="btn2">
-                        Avaliar
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -132,9 +123,6 @@
                       <a href="" class="btn1">
                         Comentar
                       </a>
-                      <a href="" class="btn2">
-                        Avaliar
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -155,9 +143,6 @@
                     <div class="btn-box">
                       <a href="" class="btn1">
                         Comentar
-                      </a>
-                      <a href="" class="btn2">
-                        Avaliar
                       </a>
                     </div>
                   </div>
@@ -243,18 +228,6 @@
                   <span>Romance 1</span>
                 </h5>
               </div>
-              <div class="like">
-                <h6>
-                Avaliação
-                </h6>
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </div>
-              </div>
             </div>
           </div>
           <div class="btn-box">
@@ -277,18 +250,6 @@
                   <span>Romance 2</span>
                 </h5>
               </div>
-              <div class="like">
-                <h6>
-                Avaliação
-                </h6>
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </div>
-              </div>
             </div>
           </div>
           <div class="btn-box">
@@ -310,18 +271,6 @@
                 <h5>
                   <span>Romance 3</span>
                 </h5>
-              </div>
-              <div class="like">
-                <h6>
-                Avaliação
-                </h6>
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -362,18 +311,6 @@
                   <span>Mistério 1</span>
                 </h5>
               </div>
-              <div class="like">
-                <h6>
-                Avaliação
-                </h6>
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </div>
-              </div>
             </div>
           </div>
           <div class="btn-box">
@@ -396,18 +333,6 @@
                   <span>Mistério 2</span>
                 </h5>
               </div>
-              <div class="like">
-                <h6>
-                Avaliação
-                </h6>
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </div>
-              </div>
             </div>
           </div>
           <div class="btn-box">
@@ -429,18 +354,6 @@
                 <h5>
                   <span>Mistério 3</span>
                 </h5>
-              </div>
-              <div class="like">
-                <h6>
-                Avaliação
-                </h6>
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -482,18 +395,6 @@
                   <span>Literatura Infantil 1</span>
                 </h5>
               </div>
-              <div class="like">
-                <h6>
-                Avaliação
-                </h6>
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </div>
-              </div>
             </div>
           </div>
           <div class="btn-box">
@@ -516,18 +417,6 @@
                   <span>Literatura Infantil 2</span>
                 </h5>
               </div>
-              <div class="like">
-                <h6>
-                Avaliação
-                </h6>
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </div>
-              </div>
             </div>
           </div>
           <div class="btn-box">
@@ -549,18 +438,6 @@
                 <h5>
                   <span>Literatura Infantil 3</span>
                 </h5>
-              </div>
-              <div class="like">
-                <h6>
-                Avaliação
-                </h6>
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>

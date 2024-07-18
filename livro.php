@@ -211,22 +211,6 @@
                 There are many variations of
                 passages of Lorem Ipsum
               </p>
-              <br>
-              <div class="like">
-                <h6>
-                  Avaliação
-                </h6>
-                <div style="color: #ff9900" class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </div>
-              </div>
-              <a href="">
-                Avaliar
-              </a>
             </div>
           </div>
         </div>

@@ -10,12 +10,12 @@ class Livro
     {
         $this->conn = $db;
     }
-    public function registrar($titulo, $autor, $genero, $ano_publicacao)
+    public function registrar($titulo, $autor, $genero, $ano_publicacao, $caminho)
     {
-        $query = "INSERT INTO " . $this->table_name . " (titulo, autor, genero, ano_publicacao) VALUES (?, ?, ?, ?)";
+        $query = "INSERT INTO " . $this->table_name . " (titulo, autor, genero, ano_publicacao, caminho) VALUES (?, ?, ?, ?, ?)";
         $stmt = $this->conn->prepare($query);
         $hashed_password = password_hash($ano_publicacao, PASSWORD_BCRYPT);
-        $stmt->execute([$titulo, $autor, $genero, $hashed_password]);
+        $stmt->execute([$titulo, $autor, $genero, $ano_publicacao, $caminho]);
         return $stmt;
     }
 
@@ -31,9 +31,9 @@ class Livro
         }
         return false;
     }
-    public function criar($titulo, $autor, $genero, $ano_publicacao)
+    public function criar($titulo, $autor, $genero, $ano_publicacao, $caminho)
     {
-        return $this->registrar($titulo, $autor, $genero, $ano_publicacao);
+        return $this->registrar($titulo, $autor, $genero, $ano_publicacao, $caminho);
     }
     public function ler($search = '', $order_by = '')
     {
@@ -85,9 +85,22 @@ class Livro
     }
     public function deletarLivro($idlivro)
     {
-        $query = "DELETE FROM " . $this->table_name . " WHERE idlivro = ?";
-        $stmt = $this->conn->prepare($query);
-        $stmt->execute([$idlivro]);
-        return $stmt;
+        // Excluir os comentários associados ao livro
+        $query_delete_comentarios = "DELETE FROM comentarios WHERE idliv = ?";
+        $stmt_delete_comentarios = $this->conn->prepare($query_delete_comentarios);
+        $stmt_delete_comentarios->execute([$idlivro]);
+
+        // Excluir o livro
+        $query_delete_livro = "DELETE FROM " . $this->table_name . " WHERE idlivro = ?";
+        $stmt_delete_livro = $this->conn->prepare($query_delete_livro);
+        $stmt_delete_livro->execute([$idlivro]);
+
+        return true;
+    }
+
+    public function addALista($idlivro, $titulo, $autor, $ano_publicacao, $genero){
+        if(!isset($_SESSION['lista'])){
+            $_SESSION['lista'] = array();
+        }
     }
 }

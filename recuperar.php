@@ -1,3 +1,25 @@
+<?php
+include_once './config/config.php';
+include_once './classes/Usuario.php';
+
+
+$mensagem = '';
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = $_POST['email'];
+    $usuario = new Usuario($db);
+    $codigo = $usuario->gerarCodigoVerificacao($email);
+
+
+    if ($codigo) {
+        $mensagem = "Seu código de verificação é: $codigo <br> Por favor, anote o código e <a href='redefinir_senha.php'>clique aqui</a> para redefinir sua senha.";
+    } else {
+        $mensagem = 'E-mail não encontrado.';
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -13,7 +35,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>HandTime</title>
+  <title>Recuperação de senha</title>
 
 
   <!-- bootstrap core css -->
@@ -51,19 +73,21 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
-            <form action="">
+            <form method="POST">
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" name="email" placeholder="Email" required/>
               </div>
               <div>
               </div>
               <br>
               <div class="btn_box">
-                <button>
+                <button class="botao" type="submit" value="Enviar">
                   Recuperar
                 </button>
               </div>
             </form>
+            <p><?php echo $mensagem; ?></p>
+            <a href="login.php"></a>
           </div>
         </div>
         <div class="col-md-6 ">

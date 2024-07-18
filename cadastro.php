@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $fone = $_POST['fone'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
-    $usuario->criar($nome, $fone, $email, $senha);
+    $usuario->registrar($nome, $fone, $email, $senha, $adm);
     header('Location: login2.php');
     exit();
 }
@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
-            <form action="">
+            <form method="POST">
             <div>
                 <input type="text" placeholder="Nome" name="nome" required/>
               </div>

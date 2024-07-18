@@ -1,3 +1,36 @@
+<?php
+include_once './config/config.php';
+include_once './classes/Livro.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $livros = new Livro($db);
+    $ano_publicacao = $_POST['anoPubli'];
+    $autor = $_POST['autor'];
+    $genero = $_POST['genero'];
+    $titulo = $_POST['titulo'];
+    $imagem = $_FILES['imagem'];
+
+    // Verificar se houve erro no upload
+    if ($imagem['error'] === UPLOAD_ERR_OK) {
+        $extensao = pathinfo($imagem['name'], PATHINFO_EXTENSION);
+        $nomeArquivo = uniqid() . '.' . $extensao;
+        $caminhoArquivo = 'uploads/' . $nomeArquivo;
+
+        // Mover o arquivo para a pasta de uploads
+        if (move_uploaded_file($imagem['tmp_name'], $caminhoArquivo)) {
+            // Chamar método para criar o livro, passando o caminho da imagem
+            $livros->criar($titulo, $autor, $genero, $ano_publicacao, $caminhoArquivo);
+            echo "Livro registrado com sucesso!";
+            echo " <a href='portal.php'>Voltar</a><br><br>";
+        } else {
+            echo "Erro ao mover o arquivo.";
+        }
+    } else {
+        echo "Erro no upload: " . $imagem['error'];
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -13,7 +46,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>HandTime</title>
+  <title>Cadastrar Livro</title>
 
 
   <!-- bootstrap core css -->
@@ -51,15 +84,18 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form_container">
-              <form action="">
+              <form method="POST" enctype="multipart/form-data">
                 <div>
-                  <input type="file" placeholder="Capa" />
+                  <input type="file" name="imagem" id="imagem" placeholder="Capa" required/>
                 </div>
                 <div>
-                  <input type="text" placeholder="Titulo" />
+                  <input type="text" name="titulo" placeholder="Titulo" required/>
                 </div>
                 <div>
-                  <input type="text" placeholder="Editora" />
+                  <input type="text" name="autor" placeholder="Editora" required/>
+                </div>
+                <div>
+                  <input type="number" name="anoPubli" placeholder="Ano de Publicação" required/>
                 </div>
                 <div>
                   <select name="genero" id="genero" placeholder="Selecione o genero">
@@ -82,7 +118,7 @@
                 </div>
                 <br>
                 <div class="btn_box">
-                  <button>
+                  <button type="submit" value="Adicionar">
                     Cadastrar
                   </button>
                 </div>
